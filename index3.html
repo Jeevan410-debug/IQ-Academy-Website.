@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>IQ Academy | Maths tuition in Choolaimedu, Chennai</title>
+<meta name="description" content="IQ Academy is a tuition centre in Easwar Nagar, Choolaimedu, Chennai. Clear maths teaching, patient teachers, rated 4.9 from 20 Google reviews.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@600;800;900&family=Hanken+Grotesk:wght@400;600&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#eef4f8;--rule:#cfe0ec;--ink:#10243e;--mute:#44566e;--red:#d93a45;--pencil:#f5b700;--blue:#1f4fd8;--board:#16403a;--chalk:#f1f5ee;--sheet:#fff;--m:clamp(14px,6vw,84px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#0e1829;--rule:#1b2d46;--ink:#e9f0fa;--mute:#9fb0c7;--red:#ff6b73;--blue:#86a6ff;--board:#0f2f2a;--sheet:#17243a}}
+:root[data-theme="dark"]{--paper:#0e1829;--rule:#1b2d46;--ink:#e9f0fa;--mute:#9fb0c7;--red:#ff6b73;--blue:#86a6ff;--board:#0f2f2a;--sheet:#17243a}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0;background:var(--paper) repeating-linear-gradient(transparent 0 35px,var(--rule) 35px 36px);color:var(--ink);font:400 1.06rem/1.7 "Hanken Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;overflow-x:hidden}
+body::before{content:"";position:fixed;top:0;bottom:0;left:var(--m);width:2px;background:var(--red);opacity:.45;z-index:0;pointer-events:none}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:4px}
+.w{position:relative;z-index:1;padding:0 clamp(18px,4vw,56px) 0 calc(var(--m) + clamp(18px,3vw,44px))}
+.in{max-width:1100px}
+h1,h2,h3{font-family:Gabarito,system-ui,sans-serif;margin:0;letter-spacing:-.02em}
+nav{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 0}
+.logo{font:900 1.45rem Gabarito,sans-serif;text-decoration:none;display:flex;align-items:center;gap:.5rem}
+.logo i{font-style:normal;background:var(--pencil);color:#10243e;padding:.05em .35em;border-radius:3px 12px 3px 12px}
+.links{display:flex;gap:26px;align-items:center;font-weight:600}
+.links a{text-decoration:none}.links a:hover{text-decoration:underline;text-decoration-color:var(--red);text-underline-offset:6px;text-decoration-thickness:2px}
+.btn{display:inline-block;font-weight:600;text-decoration:none;padding:.8em 1.4em;border-radius:10px 10px 10px 3px;background:var(--blue);color:#fff;border:2px solid var(--blue);cursor:pointer;font:600 1rem "Hanken Grotesk",sans-serif}
+.btn.o{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn:hover{filter:brightness(1.1)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;padding:36px 0 84px}
+h1{font-size:clamp(2.9rem,6.8vw,5.7rem);line-height:.96;font-weight:900;margin-bottom:.35em}
+.lead{max-width:31rem;color:var(--mute);font-size:1.18rem;margin:0 0 1.6em}
+.row{display:flex;flex-wrap:wrap;gap:12px}
+.sheet{background:var(--sheet);border-radius:4px;padding:30px 30px 34px;box-shadow:0 1px 0 var(--rule),0 18px 34px -14px rgba(16,36,62,.35);transform:rotate(-1.8deg);position:relative;max-width:440px;justify-self:center;width:100%}
+.sheet::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--red);opacity:.7;border-radius:4px 0 0 4px}
+.hd{margin:0 0 .9rem;font-weight:600;color:var(--mute);font-size:.92rem;display:flex;justify-content:space-between;border-bottom:1.5px dashed var(--rule);padding-bottom:.6rem}
+.q{font:800 1.5rem Gabarito,sans-serif;margin:0 0 .6rem}
+.work{list-style:none;padding:0;margin:0;font:600 1.9rem/1.45 Caveat,cursive;color:var(--blue)}
+.work li{display:block;width:max-content;max-width:100%;overflow:hidden;white-space:nowrap}
+.note{font:600 1.6rem/1.2 Caveat,cursive;color:var(--red);margin:1rem 0 0;max-width:15rem;transform:rotate(-2deg)}
+.score{position:absolute;right:22px;bottom:26px;width:96px;height:96px;border:4px solid var(--red);border-radius:50%;display:grid;place-items:center;font:600 2.1rem Caveat,cursive;color:var(--red);transform:rotate(-12deg)}
+.work li,.note,.score{animation-fill-mode:both}
+.work li:nth-child(1){animation:type .7s steps(14) .4s both}
+.work li:nth-child(2){animation:type .6s steps(9) 1.3s both}
+.work li:nth-child(3){animation:type .8s steps(14) 2.1s both}
+.score{animation:stamp .35s cubic-bezier(.2,1.6,.4,1) 3.1s both}
+.note{animation:fade .5s ease 3.5s both}
+@keyframes type{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes stamp{from{opacity:0;transform:rotate(-12deg) scale(2)}to{opacity:1;transform:rotate(-12deg) scale(1)}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+section{padding:64px 0}
+h2{font-size:clamp(2rem,4.4vw,3.2rem);line-height:1.02;font-weight:800;max-width:17ch;margin-bottom:.8em}
+.mark{display:flex;align-items:baseline;gap:.7rem;flex-wrap:wrap;margin-bottom:1.4rem}
+.mark b{font:900 3.4rem Gabarito,sans-serif;color:var(--red);line-height:1}
+.mark span{color:var(--mute)}
+.pts{display:grid;grid-template-columns:1fr 1fr;gap:0 48px;list-style:none;padding:0;margin:0}
+.pts li{padding:20px 0 20px 46px;border-bottom:1.5px solid var(--rule);position:relative}
+.pts li::before{content:"✓";position:absolute;left:0;top:18px;font:600 2rem Caveat,cursive;color:var(--red)}
+.pts h3{font-size:1.25rem;margin-bottom:.15em}.pts p{margin:0;color:var(--mute)}
+.slips{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:26px;align-items:start}
+.slip{background:var(--sheet);padding:26px 24px 22px;border-radius:3px;box-shadow:0 12px 26px -14px rgba(16,36,62,.4);position:relative;margin:0}
+.slip:nth-child(1){transform:rotate(-1.2deg)}.slip:nth-child(2){transform:rotate(1deg);margin-top:28px}.slip:nth-child(3){transform:rotate(-.5deg);margin-top:8px}
+.slip::before{content:"";position:absolute;top:-10px;left:36%;width:70px;height:20px;background:var(--pencil);opacity:.8;transform:rotate(-3deg)}
+.slip p{margin:0 0 .9rem;font-size:1.1rem}
+.slip footer{font-weight:600;color:var(--mute);display:flex;justify-content:space-between;align-items:baseline}
+.slip footer em{font:600 1.7rem Caveat,cursive;color:var(--red);font-style:normal}
+.board{background:var(--board);color:var(--chalk);position:relative;z-index:1;margin-left:calc(var(--m) + 2px);border-top:10px solid #8a5a2b;padding-top:6px}
+.board section{padding:72px 0 80px}
+.board .w{padding-left:clamp(18px,3vw,44px);margin-left:0}
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.board h2{color:var(--chalk)}
+.board dl{margin:0}.board dt{font:600 1.5rem Caveat,cursive;color:var(--pencil);margin-top:1rem}.board dd{margin:0;font-size:1.15rem}
+.board dd a{text-underline-offset:4px}
+form{display:grid;gap:14px;align-content:start}
+label{display:grid;gap:4px;font-weight:600;font-size:.95rem}
+input,textarea{font:inherit;color:var(--chalk);background:rgba(255,255,255,.07);border:0;border-bottom:2px solid rgba(241,245,238,.5);padding:.65em .7em;border-radius:3px 3px 0 0;width:100%}
+input:focus,textarea:focus{outline:none;border-bottom-color:var(--pencil);background:rgba(255,255,255,.12)}
+.board .btn{background:var(--pencil);color:#10243e;border-color:var(--pencil)}
+.board .btn.o{background:transparent;color:var(--chalk);border-color:var(--chalk)}
+.hint{font-size:.9rem;opacity:.75;margin:0}
+.foot{padding:28px 0 90px;color:var(--mute);font-size:.92rem}
+.bar{display:none}
+@media (max-width:860px){
+  .links a:not(.btn){display:none}
+  .hero,.visit,.slips,.pts{grid-template-columns:1fr}
+  .hero{gap:36px;padding-bottom:56px}
+  .slip:nth-child(n){margin-top:0}
+  .bar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:5;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));gap:10px;background:var(--paper);border-top:1.5px solid var(--rule)}
+  .bar .btn{text-align:center;padding:.7em .5em}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.work li,.note,.score{animation:none!important}}
+</style>
+</head>
+<body>
+<div class="w"><div class="in">
+<nav>
+  <a class="logo" href="#top"><i>IQ</i>Academy</a>
+  <div class="links"><a href="#why">Why IQ</a><a href="#reviews">Reviews</a><a href="#visit">Visit</a><a class="btn" href="tel:+916338761586">Call 063387 61586</a></div>
+</nav>
+<main id="top">
+<div class="hero">
+  <div>
+    <h1>Learn it clearly. Ace the exam.</h1>
+    <p class="lead">IQ Academy is a tuition centre in Choolaimedu, Chennai, where patient teachers explain maths step by step until it makes sense.</p>
+    <div class="row">
+      <a class="btn" href="tel:+916338761586">Call the centre</a>
+      <a class="btn o" href="https://wa.me/916338761586?text=Hello%20IQ%20Academy%2C%20I%20would%20like%20to%20ask%20about%20tuition." target="_blank" rel="noopener">WhatsApp us</a>
+    </div>
+  </div>
+  <div class="sheet" role="img" aria-label="A maths test answer marked 10 out of 10: 2x plus 5 equals 17, so x equals 6">
+    <p class="hd"><span>Class test: Algebra</span><span>Q3</span></p>
+    <p class="q">Solve for x: 2x + 5 = 17</p>
+    <ol class="work"><li>2x = 17 − 5</li><li>2x = 12</li><li>x = 12 ÷ 2 = 6</li></ol>
+    <p class="note">Every step clear. Well done!</p>
+    <div class="score">10/10</div>
+  </div>
+</div>
+
+<section id="why" aria-labelledby="h-why">
+  <div class="mark"><b>4.9</b><span>average from 20 Google reviews</span></div>
+  <h2 id="h-why">What students and parents notice</h2>
+  <ul class="pts">
+    <li><h3>Maths that makes sense</h3><p>Concepts are explained step by step, so they are easy to follow.</p></li>
+    <li><h3>Help when exams come</h3><p>Reviewers say the lessons were very helpful during exam time.</p></li>
+    <li><h3>Patient, friendly teachers</h3><p>Calm teachers who are ready to clear every doubt.</p></li>
+    <li><h3>A clean place to focus</h3><p>A tidy, pleasant learning environment.</p></li>
+  </ul>
+</section>
+
+<section id="reviews" aria-labelledby="h-rev">
+  <h2 id="h-rev">In their words</h2>
+  <div class="slips">
+    <blockquote class="slip"><p>Excellent tuition centre! The teaching is very clear and easy to understand.</p><footer>Naveeen Kumar <em>5/5</em></footer></blockquote>
+    <blockquote class="slip"><p>Very nice tuition center with a clean and pleasant learning environment. Overall, a great place for students to learn.</p><footer>Mariya M <em>5/5</em></footer></blockquote>
+    <blockquote class="slip"><p>Teach maths very good, very helpful during exam.</p><footer>kamal kannan <em>5/5</em></footer></blockquote>
+  </div>
+</section>
+</main>
+</div></div>
+
+<div class="board" id="visit">
+<div class="w"><div class="in"><section aria-labelledby="h-visit">
+  <div class="visit">
+    <div>
+      <h2 id="h-visit">Visit us, or send a message</h2>
+      <dl>
+        <dt>Address</dt><dd>2/15, Officers Colony 3rd St, Easwar Nagar, Choolaimedu, Chennai, Tamil Nadu 600024</dd>
+        <dt>Phone</dt><dd><a href="tel:+916338761586">063387 61586</a></dd>
+        <dt>Hours</dt><dd>Open daily until 8 pm</dd>
+      </dl>
+      <p><a class="btn o" style="margin-top:1.4rem" href="https://www.google.com/maps/search/?api=1&query=IQ+Academy+Choolaimedu+Chennai" target="_blank" rel="noopener">Open in Google Maps</a></p>
+    </div>
+    <form id="enq">
+      <label>Your name<input name="n" required autocomplete="name"></label>
+      <label>Student’s class<input name="c" placeholder="For example, Class 10" required></label>
+      <label>What would you like help with?<textarea name="m" rows="3" placeholder="Maths, exam preparation, timings"></textarea></label>
+      <button class="btn" type="submit">Send on WhatsApp</button>
+      <p class="hint">This opens WhatsApp with your message ready to send.</p>
+    </form>
+  </div>
+</section></div></div>
+</div>
+
+<div class="w"><div class="in"><p class="foot">© <span id="yr">2026</span> IQ Academy, Choolaimedu, Chennai. Ratings and reviews are from Google Maps.</p></div></div>
+
+<div class="bar"><a class="btn" href="tel:+916338761586">Call</a><a class="btn o" href="https://wa.me/916338761586" target="_blank" rel="noopener">WhatsApp</a></div>
+
+<script>
+document.getElementById("yr").textContent=new Date().getFullYear();
+document.getElementById("enq").addEventListener("submit",function(e){
+  e.preventDefault();var f=e.target;
+  var t="Hello IQ Academy, I am "+f.n.value+". Student’s class: "+f.c.value+". "+(f.m.value||"I would like to know more about tuition.");
+  window.open("https://wa.me/916338761586?text="+encodeURIComponent(t),"_blank","noopener");
+});
+</script>
+</body>
+</html>
